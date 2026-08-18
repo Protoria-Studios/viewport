@@ -8,8 +8,6 @@ Viewport is an extremely light weight image viewer. Open any image on your compu
 
 [Download for Windows](https://github.com/telekrex/viewport/releases), or build from source.
 
-No installation needed, just run `Viewport.exe`.
-
 Supported image formats: `jpeg, jpg, png, bmp, tif, webp`
 
 Transparency works.

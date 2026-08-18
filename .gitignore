@@ -4,5 +4,6 @@ __pycache__/
 .Python
 Source/build/
 Source/dist/
+Source/installer
 *.manifest
 *.spec

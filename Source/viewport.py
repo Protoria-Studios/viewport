@@ -31,15 +31,14 @@ x = Image.open(current_file)
 current_file_index = 0
 
 def grab_files(from_path):
-    head, tail = os.path.split(from_path)
-    folder = str(head)
-    files = []
-    for item in os.listdir(folder):
-        for format in ['.png', '.jpg', '.jpeg', '.bmp', '.tif', '.webp']:
-            if item.endswith(format):
-                item_path = folder + '\\' + item
-                files.append(item_path)
-    print(files)
+    from_path = os.path.normpath(from_path)
+    folder = os.path.dirname(from_path)
+    extensions = ('.png', '.jpg', '.jpeg', '.bmp', '.tif', '.webp')
+    files = [
+        os.path.normpath(os.path.join(folder, item))
+        for item in os.listdir(folder)
+        if item.lower().endswith(extensions)
+    ]
     return files, files.index(from_path)
 
 if len(sys.argv) > 1:

@@ -1,7 +1,7 @@
 <h1 align=center>Viewport</h1>
 <p align=center>A minimal image viewer</p>
 <p align=center>
-  <img src="Screenshot.png" width=480/>
+  <img src="demo.png" width=480/>
 </p>
 
 Viewport is an extremely light weight image viewer. Open any image on your computer, or cycle through a folder of images, with zero bloated features. Use `WASD` keybindings to quickly navigate the files without leaving your keyboard. Useful for game development when looking through references, art, screenshots, etc. Fast & stays out the way.

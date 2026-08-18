@@ -37,10 +37,13 @@ def grab_files(from_path):
     for item in os.listdir(folder):
         for format in ['.png', '.jpg', '.jpeg', '.bmp', '.tif', '.webp']:
             if item.endswith(format):
-                item_path = folder + '/' + item
+                item_path = folder + '\\' + item
                 files.append(item_path)
     print(files)
     return files, files.index(from_path)
+
+if len(sys.argv) > 1:
+    all_files, current_file_index = grab_files(''.join(sys.argv[1:]))
 
 def neat_name(file_path):
     head, tail = os.path.split(file_path)

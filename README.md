@@ -6,7 +6,7 @@
 
 Viewport is an extremely light weight image viewer. Open any image on your computer, or cycle through a folder of images, with zero bloated features. Use `WASD` keybindings to quickly navigate the files without leaving your keyboard. Useful for game development when looking through references, art, screenshots, etc. Fast & stays out the way.
 
-[Download for Windows](https://github.com/telekrex/viewport/releases), or build from source.
+[Download for Windows](https://github.com/Protoria-Studios/viewport/releases)), or build from source.
 
 Supported image formats: `jpeg, jpg, png, bmp, tif, webp`
 
